@@ -5,7 +5,7 @@ import requests
 
 # sample: {'aim': 40.5165, 'positioning': 42.074, 'utility': 62.318, 'clutch': 0.0816, 'opening': -0.0197, 'ct_leetify': -0.0312, 't_leetify': -0.028}
 
-LEETIFY_API_KEY="f5777bc9-dce2-4fde-a646-fbfd5380f2f4"
+LEETIFY_API_KEY="dummy1234"
 
 def fetch_leetify_rating_by_leetify_id(leetify_id) -> dict:
 
@@ -34,4 +34,5 @@ def fetch_leetify_rating_by_leetify_id(leetify_id) -> dict:
 if __name__ == "__main__":
     leetify_id="76561198410951348"
     ratings = fetch_leetify_rating_by_leetify_id(leetify_id)
+
     print(ratings)
