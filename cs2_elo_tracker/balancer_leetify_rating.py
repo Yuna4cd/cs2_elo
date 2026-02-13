@@ -60,11 +60,9 @@ def balance_teams(
 
 
 if __name__ == "__main__":
-    # leetify_ids_path = DATA_DIR / "leetify_ids.json"
-    # ratings = load_ratings(leetify_ids_path)
-    # print(ratings)
-
-    ratings = {'nanase': {'aim': 65.1732, 'positioning': 45.6205, 'utility': 43.5168, 'clutch': 0.0942, 'opening': -0.0376, 'ct_leetify': -0.0123, 't_leetify': -0.0115}, '901': {'aim': 41.6834, 'positioning': 54.7758, 'utility': 43.7122, 'clutch': 0.0978, 'opening': -0.0085, 'ct_leetify': -0.006, 't_leetify': -0.0206}, 'a1': {'aim': 56.3559, 'positioning': 47.2097, 'utility': 42.1476, 'clutch': 0.0985, 'opening': -0.002, 'ct_leetify': 0.0002, 't_leetify': -0.0008}, '炒饭': {'aim': 88.493, 'positioning': 61.7911, 'utility': 42.078, 'clutch': 0.1133, 'opening': 0.0284, 'ct_leetify': 0.0051, 't_leetify': 0.02}, '龟哥': {'aim': 42.4655, 'positioning': 37.07, 'utility': 21.0866, 'clutch': 0.0607, 'opening': -0.0526, 'ct_leetify': -0.0262, 't_leetify': -0.0237}, '色魔': {'aim': 59.8706, 'positioning': 49.6011, 'utility': 37.1807, 'clutch': 0.1096, 'opening': -0.0056, 'ct_leetify': 0, 't_leetify': 0.0215}, 'steven': {'aim': 50, 'positioning': 62.5516, 'utility': 42.4634, 'clutch': 0.0775, 'opening': 0.0077, 'ct_leetify': -0.0061, 't_leetify': 0.0151}, 'rbc': {'aim': 62.5516, 'positioning': 39.7432, 'utility': 61.4688, 'clutch': 0.0737, 'opening': -0.0332, 'ct_leetify': -0.0282, 't_leetify': -0.0136}, 'guaaaaa': {'aim': 79.6731, 'positioning': 57.1424, 'utility': 59.3607, 'clutch': 0.1169, 'opening': -0.0073, 'ct_leetify': 0.0147, 't_leetify': 0.0082}, 'db': {'aim': 75.8036, 'positioning': 64.8027, 'utility': 48.5725, 'clutch': 0.1201, 'opening': 0.0214, 'ct_leetify': 0.022, 't_leetify': 0.0268}}
+    leetify_ids_path = DATA_DIR / "leetify_ids.json"
+    ratings = load_ratings(leetify_ids_path)
+    print(ratings)
     
     players = list(ratings.keys())
     
@@ -74,4 +72,5 @@ if __name__ == "__main__":
         print(f"Team 1: {team1} (Avg Aim: {team1_rating:.2f})")
         print(f"Team 2: {team2} (Avg Aim: {team2_rating:.2f})")
         print(f"Difference in Avg Aim: {diff:.2f}\n")
+
     
